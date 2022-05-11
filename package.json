@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwindcss": "npx tailwindcss -i public/stylesheets/tailwind.css -o public/stylesheets/style.css --watch",
     "tailwind": "npx tailwindcss build public/stylesheets/tailwind.css -o public/stylesheets/style.css",
     "autoprefixer": "postcss public/stylesheets/style.css -u autoprefixer --no-map -o public/stylesheets/style.css",
     "minify": "postcss public/stylesheets/style.css -u cssnano --no-map -o public/stylesheets/style.css",
