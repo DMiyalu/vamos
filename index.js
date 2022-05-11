@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-const port = 3000
 var createError = require('http-errors');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -37,7 +36,7 @@ app.use(function(err, req, res, next) {
   
     // render the error page
     res.status(err.status || 500);
-    res.render('error');
+    res.render('pages/error', {title: 'Vamos | Url incorrecte'});
   });
 
 module.exports = app;
