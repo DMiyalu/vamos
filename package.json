@@ -4,17 +4,29 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./bin/www",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss build public/stylesheets/tailwind.css -o public/stylesheets/style.css",
+    "autoprefixer": "postcss public/stylesheets/style.css -u autoprefixer --no-map -o public/stylesheets/style.css",
+    "minify": "postcss public/stylesheets/style.css -u cssnano --no-map -o public/stylesheets/style.css",
+    "build": "npm run tailwind && npm run autoprefixer",
+    "production": "npm run tailwind && npm run autoprefixer && npm run minify",
+    "start": "nodemon ./bin/www"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.6",
+    "cssnano": "^5.1.7",
     "ejs": "^3.1.7",
     "express": "^4.18.1",
     "http-errors": "^2.0.0",
     "morgan": "^1.10.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "postcss-cli": "^9.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24"
   }
 }
