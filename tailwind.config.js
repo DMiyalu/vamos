@@ -13,12 +13,24 @@ module.exports = {
       'gray-dark': '#334155',
       'gray': '#a8a8a8',
       'gray-light': '#f8f8f8',
+      'white': '#fff',
     },
     fontFamily: {
       sans: ['Oswald', 'sans-serif'],
       display: ['Helvetica'],
     },
-    extend: {},
+    extend: {
+      spacing: {
+        '25%': '25%',
+        '50%': '50%',
+        '100%': '100%',
+        '100vw': '100vw',
+        '55px': '55px',
+      },
+      backgroundImage: {
+        'hero-pattern': "url('https://media.istockphoto.com/photos/soccer-training-for-young-mixed-race-boys-on-a-football-pitch-picture-id1319012201?k=20&m=1319012201&s=612x612&w=0&h=P7HeQCEEWZKMEpvh-jOA8corCWZMaY0yVips4oE-zdc=')",
+      }
+    },
   },
   plugins: [],
 }
