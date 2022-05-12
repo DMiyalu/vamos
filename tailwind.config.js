@@ -1,32 +1,24 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: [
     'views/**/*.ejs'
   ],
   theme: {
     colors: {
-      'blue': '#1fb6ff',
-      'purple': '#7e5bef',
-      'pink': '#ff49db',
-      'orange': '#ff7849',
-      'green': '#13ce66',
-      'yellow': '#ffc82c',
-      'gray-dark': '#273444',
-      'gray': '#8492a6',
-      'gray-light': '#d3dce6',
+      'blue': '#014478',
+      'blue-light': '#4278A1',
+      'blue-dark': '01365E',
+      'yellow': '#cbcb4c',
+      'gray-dark': '#334155',
+      'gray': '#a8a8a8',
+      'gray-light': '#f8f8f8',
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      sans: ['Oswald', 'sans-serif'],
+      display: ['Helvetica'],
     },
-    extend: {
-      spacing: {
-        '8xl': '96rem',
-        '9xl': '128rem',
-      },
-      borderRadius: {
-        '4xl': '2rem',
-      }
-    },
+    extend: {},
   },
   plugins: [],
 }
