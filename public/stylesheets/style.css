@@ -551,6 +551,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1.5rem;
 }
 
+.h-52 {
+  height: 13rem;
+}
+
 .w-auto {
   width: auto;
 }
@@ -680,6 +684,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.25rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -787,6 +796,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
+.header {
+  background-color: transparent;
+  top: 0;
+  transition: all ease-out .5s;
+}
+
+.active {
+  background-color: #4278A1;
+}
+
 .button {
   display: inline-block;
   padding: .75rem 1.25rem;
@@ -862,6 +881,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 

@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.header {
+  background-color: transparent;
+  top: 0;
+  -webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+}
+
+.active {
+  background-color: #4278A1;
+}
+
 .button {
   display: inline-block;
   padding: .75rem 1.25rem;
