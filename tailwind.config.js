@@ -29,7 +29,8 @@ module.exports = {
         '100vw': '100vw',
         '55px': '55px',
         '100px': '100px',
-        '650px': '650px',
+        'hero-top': '45px',
+        'hero-h': '450px',
       },
       backgroundImage: {
         'hero-pattern': "url('https://media.istockphoto.com/photos/soccer-training-for-young-mixed-race-boys-on-a-football-pitch-picture-id1319012201?k=20&m=1319012201&s=612x612&w=0&h=P7HeQCEEWZKMEpvh-jOA8corCWZMaY0yVips4oE-zdc=')",
