@@ -480,6 +480,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 0;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -495,6 +499,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .top-0 {
   top: 0px;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .-m-3 {
@@ -551,8 +559,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1.5rem;
 }
 
-.h-96 {
-  height: 24rem;
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-650px {
+  height: 650px;
 }
 
 .h-52 {
@@ -669,36 +681,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(1 68 120 / var(--tw-bg-opacity));
 }
 
+.bg-gray-light-\.95 {
+  background-color: rgba(248, 248, 248, .95);
+}
+
+.bg-gray-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+}
+
 .bg-hero-pattern {
   background-image: url('https://media.istockphoto.com/photos/soccer-training-for-young-mixed-race-boys-on-a-football-pitch-picture-id1319012201?k=20&m=1319012201&s=612x612&w=0&h=P7HeQCEEWZKMEpvh-jOA8corCWZMaY0yVips4oE-zdc=');
 }
 
-.bg-\[length\:200px_100px\] {
-  background-size: 200px 100px;
+.bg-cover {
+  background-size: cover;
 }
 
-.bg-\[length\:200px_\] {
-  background-size: 200px;
-}
-
-.bg-\[length\:200px_1000px\] {
-  background-size: 200px 1000px;
-}
-
-.bg-\[length\:1000px_1000px\] {
-  background-size: 1000px 1000px;
-}
-
-.bg-scroll {
-  background-attachment: scroll;
+.bg-center {
+  background-position: center;
 }
 
 .bg-no-repeat {
   background-repeat: no-repeat;
-}
-
-.bg-origin-border {
-  background-origin: border-box;
 }
 
 .p-2 {
@@ -734,6 +739,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 55px;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -742,8 +752,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.5rem;
 }
 
-.pr-50\% {
-  padding-right: 50%;
+.pr-30\% {
+  padding-right: 30%;
 }
 
 .text-center {
@@ -758,6 +768,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-3xl {
@@ -798,6 +813,38 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .opacity-100 {
   opacity: 1;
+}
+
+.mix-blend-normal {
+  mix-blend-mode: normal;
+}
+
+.mix-blend-screen {
+  mix-blend-mode: screen;
+}
+
+.mix-blend-overlay {
+  mix-blend-mode: overlay;
+}
+
+.mix-blend-darken {
+  mix-blend-mode: darken;
+}
+
+.mix-blend-lighten {
+  mix-blend-mode: lighten;
+}
+
+.mix-blend-color-dodge {
+  mix-blend-mode: color-dodge;
+}
+
+.mix-blend-color-burn {
+  mix-blend-mode: color-burn;
+}
+
+.mix-blend-soft-light {
+  mix-blend-mode: soft-light;
 }
 
 .shadow-sm {
@@ -934,6 +981,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 640px) {
   .sm\:h-10 {
     height: 2.5rem;
+  }
+
+  .sm\:h-9 {
+    height: 2.25rem;
   }
 
   .sm\:px-6 {
