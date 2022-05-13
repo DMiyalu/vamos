@@ -5,6 +5,12 @@ module.exports = {
     'views/**/*.ejs'
   ],
   theme: {
+    container: {
+      center: true,
+    },
+    minHeight: {
+      '.min-h': '400px',
+    },
     colors: {
       'blue': '#014478',
       'blue-light': '#4278A1',
@@ -15,6 +21,7 @@ module.exports = {
       'gray-light': '#f8f8f8',
       'gray-light-.95': 'rgba(248, 248, 248, .95)',
       'white': '#fff',
+      'black': '#000',
     },
     fontFamily: {
       sans: ['Oswald', 'sans-serif'],
@@ -28,7 +35,7 @@ module.exports = {
         '100%': '100%',
         '100vw': '100vw',
         '55px': '55px',
-        '100px': '100px',
+        '100px': '80px',
         'hero-top': '45px',
         'hero-h': '450px',
       },

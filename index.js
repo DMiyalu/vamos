@@ -36,7 +36,7 @@ app.use(function(err, req, res, next) {
   
     // render the error page
     res.status(err.status || 500);
-    res.render('pages/error', {title: 'Vamos | Url incorrecte'});
+    res.render('pages/error/error', {title: 'Vamos | Url incorrecte'});
   });
 
 module.exports = app;
