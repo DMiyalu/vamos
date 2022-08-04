@@ -2,13 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* -- Colors -- */
+/* 
+  blue: #014478
+  blue-light: #4278A1
+  yellow: #F2C94C
+  yellow-light: #DFC723
+*/
+
+/* -- Colors -- */
+
+/*-- Button-Style -- */
 .button {
   display: inline-block;
   padding: .75rem 1.25rem;
-  border-radius: 10rem;
-  color: #fff;
+  border-radius: 10px;
+  color: #000;
   text-transform: uppercase;
-  font-size: .6rem;
+  font-size: .7rem;
+  font-weight: 700;
   letter-spacing: .15rem;
   transition: all .3s;
   position: relative;
@@ -24,8 +36,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #014478;
-  border-radius: 10rem;
+  background-color: #F2C94C;
+  border-radius: 10px;
   z-index: -2;
 }
 
@@ -36,16 +48,55 @@
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #4278A1;
+  background-color: #DFC723;
   transition: all .3s;
-  border-radius: 10rem;
+  border-radius: 10px;
   z-index: -1;
-}
-
-.button:hover {
-  color: #fff;
 }
 
 .button:hover::before {
   width: 100%;
 }
+
+/* -- End Button-Style -- */
+
+/* -- Header-Style -- */
+
+.tag-page {
+  color: #014478;
+  position: relative;
+}
+
+.tag-page:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; 
+  height: 2px;
+  background: #014478;
+}
+
+.menu {
+  position: relative;
+  transition: all .3s;
+}
+
+.menu::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 0%;
+  bottom: -5px;
+  height: 2px;
+  transition: all .3s;
+  background: #014478;
+  z-index: -1;
+}
+
+.menu:hover::before {
+  width: 100%;
+}
+
+/* -- End Header-Style -- */

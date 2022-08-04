@@ -551,9 +551,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .my-7 {
@@ -647,12 +647,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 80rem;
 }
 
-.max-w-fit {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
-
 .max-w-max {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
@@ -685,10 +679,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-col {
   flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
 }
 
 .items-center {
@@ -757,11 +747,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(1 68 120 / var(--tw-bg-opacity));
 }
 
-.bg-gray-light {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
-}
-
 .bg-hero-pattern {
   background-image: url('https://media.istockphoto.com/photos/soccer-training-for-young-mixed-race-boys-on-a-football-pitch-picture-id1319012201?k=20&m=1319012201&s=612x612&w=0&h=P7HeQCEEWZKMEpvh-jOA8corCWZMaY0yVips4oE-zdc=');
 }
@@ -816,24 +801,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.25rem;
 }
 
-.px-2\.5 {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .py-14 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
+}
+
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
 }
 
 .pt-5 {
@@ -976,13 +956,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
+/* -- Colors -- */
+
+/* 
+  blue: #014478
+  blue-light: #4278A1
+  yellow: #F2C94C
+  yellow-light: #DFC723
+*/
+
+/* -- Colors -- */
+
+/*-- Button-Style -- */
+
 .button {
   display: inline-block;
   padding: .75rem 1.25rem;
-  border-radius: 10rem;
-  color: #fff;
+  border-radius: 10px;
+  color: #000;
   text-transform: uppercase;
-  font-size: .6rem;
+  font-size: .7rem;
+  font-weight: 700;
   letter-spacing: .15rem;
   transition: all .3s;
   position: relative;
@@ -1000,8 +994,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #014478;
-  border-radius: 10rem;
+  background-color: #F2C94C;
+  border-radius: 10px;
   z-index: -2;
 }
 
@@ -1012,23 +1006,62 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #4278A1;
+  background-color: #DFC723;
   transition: all .3s;
-  border-radius: 10rem;
+  border-radius: 10px;
   z-index: -1;
-}
-
-.button:hover {
-  color: #fff;
 }
 
 .button:hover::before {
   width: 100%;
 }
 
-.hover\:text-blue-light:hover {
+/* -- End Button-Style -- */
+
+/* -- Header-Style -- */
+
+.tag-page {
+  color: #014478;
+  position: relative;
+}
+
+.tag-page:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 2px;
+  background: #014478;
+}
+
+.menu {
+  position: relative;
+  transition: all .3s;
+}
+
+.menu::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 0%;
+  bottom: -5px;
+  height: 2px;
+  transition: all .3s;
+  background: #014478;
+  z-index: -1;
+}
+
+.menu:hover::before {
+  width: 100%;
+}
+
+/* -- End Header-Style -- */
+
+.hover\:text-blue:hover {
   --tw-text-opacity: 1;
-  color: rgb(66 120 161 / var(--tw-text-opacity));
+  color: rgb(1 68 120 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
