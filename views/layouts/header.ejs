@@ -1,19 +1,31 @@
-<header class="sticky top-0 z-50 min-w-full bg-gray-light">
-    <div class="relative max-w-7xl mx-auto px-55px">
-        <div class="flex justify-between items-center py-1 md:justify-start md:space-x-10">
+<header class="fixed top-0 z-50 min-w-full bg-white">
+    <div class="relative max-w-7xl mx-auto lg:px-55px px-4">
+        <div class="block lg:flex justify-between lg:flex-wrap items-center py-1 md:justify-start md:space-x-10">
             <div class="flex justify-start lg:w-0 lg:flex-1">
-                <a href="#" class="flex justify-start items-center">
+                <a href="#" class="flex w-full justify-start items-center">
                   <span class="sr-only">Page d'accueil vamos académie</span>
                   <img class="h-7 w-auto sm:h-9" src="images/logo.jpeg" alt="logo vamos" title="embleme académie vamos">
                   <span class="font-bold text-blue text-sm">Vamos Academy</span>
                 </a>
-            </div>
-            <div class="flex justify-end lg:w-0 lg:flex-1">
-                <div class="flex justify-start items-center">
-                    <a href="#" class="mx-4 font-bold text-sm transition-colors hover:text-blue tag-page">Accueil</a>
-                    <a href="#" class="mx-4 font-bold text-sm transition-colors hover:text-blue menu">Contacts</a>
-                    <a href="#" class="button mx-4">Inscription</a>
+                <div class="block lg:hidden">
+                    <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-blue hover:border-blue">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                    </button>
                 </div>
+            </div>
+            <div class="block justify-end items-center mt-3 lg:mt-0">
+                <ul class="block justify-start items-center lg:flex gap-9">
+                    <li class="my-2 sm:my-0">
+                        <a href="#" class="font-bold text-sm transition-colors hover:text-blue tag-page">Accueil</a>
+                    </li>
+                    <li class="my-2 sm:my-0">
+                        <a href="#" class="font-bold text-sm transition-colors hover:text-blue menu">Contacts</a>
+                    </li>
+                    <li class="my-2 sm:my-0">
+                        <a href="#" class="button">Inscription</a>
+                    </li>
+                </ul>
+                <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
             </div>
         </div>
     </div>

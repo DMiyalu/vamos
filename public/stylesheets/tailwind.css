@@ -124,6 +124,7 @@ h6 {
 
 /* -- Header-Style -- */
 
+/* ==> Menu */
 .tag-page {
   color: #014478;
   position: relative;
@@ -160,5 +161,29 @@ h6 {
 .menu:hover::before {
   width: 100%;
 }
+
+/* ==> Mobile Menu */
+/* .mobile-nav-toggle {
+  color: #47536e;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar div {
+    display: none;
+  } */
+/* } */
 
 /* -- End Header-Style -- */
